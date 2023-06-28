@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:01,960
+That's all I can do for now.
+
+2
+00:00:02,240 --> 00:00:03,400
+Time to leave.
+
+3
+00:00:03,639 --> 00:00:07,999
+I can't get back over the main gate, so I'd better find another way.
+

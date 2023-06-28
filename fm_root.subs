@@ -1,0 +1,36 @@
+/**
+ * This file should be overridden in order to provide mission-specific subtitles.
+ * When doing so, please follow the conventions:
+ *   1) The root decl is called "fm_root" and is located in file "fm_root.subs".
+ *   2) All other subtitle decls start with "fm_" prefix and are located in files starting with "fm_".
+ */
+
+subtitles fm_root {
+	include "fm_voice"
+    include "fm_intro"
+    include "fm_debrief"
+}
+
+subtitles fm_voice {
+   verbosity story
+   inline "sound/map_specific/Voice_001.ogg" "I doubt the good captain ordered the city watch to let me pass."
+   inline "sound/map_specific/Voice_002.ogg" "Alright Captain, let's see what you know."
+   inline "sound/map_specific/Voice_003.ogg" "Well now, what have we here?"
+   inline "sound/map_specific/Voice_004.ogg" "Ugh, that smell, coal fire, and something else."
+   inline "sound/map_specific/Voice_005.ogg" "Oh, Jacobs, I always knew your math would get you in trouble one day."
+   inline "sound/map_specific/Voice_006.ogg" "Neidy, ny"
+   inline "sound/map_specific/Voice_007.ogg" "Gallow's Gate Bridge. Why am I not surprised?"
+   inline "sound/map_specific/Voice_008.ogg" "The infamous Lieutenant Hale's. I thought she skipped town."
+   srt "sound/map_specific/Voice_009.ogg" "subtitles/Voice_009.srt"
+   inline "sound/map_specific/Voice_010.ogg" "Of course he has a secret passage."
+}
+
+subtitles fm_intro { 
+   verbosity story
+   srt "fromVideo video/hits_briefing_video" "subtitles/hits_intro.srt"
+}
+
+subtitles fm_debrief { 
+   verbosity story
+   srt "sound/video/debrief_audio.ogg" "subtitles/debrief_audio.srt"
+}
